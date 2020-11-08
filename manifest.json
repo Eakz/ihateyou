@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "iHateU",
+    "description": "Replacing the name of your hated politic with the name he/she deserves",
+    "version": "0.0.1",
+    "author": "Pavel Piliuiko aka EakzIT",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "browser_action": {
+        "default_title": "Hating the hated",
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started32.png",
+            "48": "images/get_started48.png",
+            "128": "images/get_started128.png"
+        }
+    },
+    "content_scripts": [
+        { "matches": ["<all_urls>"], "js": ["jquery.min.js", "content.js"] }
+    ]
+}
