@@ -19,4 +19,5 @@ const names = {
         k: "Припіздєнтом",
     },
 };
+// considerchanging
 const ignoreWebsites = location => ["duckduckgo"].every(e => !location.includes(e));
